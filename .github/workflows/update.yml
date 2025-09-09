@@ -1,0 +1,44 @@
+name: Auto Update Fixtures
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # her gün sabah 03:00 UTC'de çalışır
+  workflow_dispatch:       # elle tetikleme seçeneği
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update fixtures.json
+        run: |
+          echo '[
+            {
+              "teamHome": "Fenerbahçe",
+              "teamAway": "Galatasaray",
+              "sport": "Futbol (Süper Lig)",
+              "date": "2025-09-15",
+              "time": "20:00",
+              "venue": "Şükrü Saracoğlu Stadyumu, İstanbul",
+              "broadcast": "beIN Sports 1"
+            },
+            {
+              "teamHome": "Türkiye",
+              "teamAway": "İtalya",
+              "sport": "Basketbol (Milli Takım)",
+              "date": "2025-09-18",
+              "time": "21:00",
+              "venue": "Sinan Erdem Spor Salonu, İstanbul",
+              "broadcast": "TRT Spor"
+            }
+          ]' > fixtures.json
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add fixtures.json
+          git commit -m "Auto update fixtures [skip ci]" || echo "No changes"
+          git push
