@@ -9,30 +9,34 @@
     "broadcast": "beIN Sports 1"
   },
   {
-    "teamHome": "Galatasaray",
-    "teamAway": "Beşiktaş",
+    "teamHome": "Samsunspor",
+    "teamAway": "Antalyaspor",
     "sport": "Futbol (Süper Lig)",
-    "date": "2025-09-21",
+    "date": "2025-09-13",
+    "time": "17:00",
+    "venue": "Samsun Yeni 19 Mayıs",
+    "broadcast": "beIN Sports 2"
+  },
+  {
+    "teamHome": "Beşiktaş",
+    "teamAway": "Galatasaray",
+    "sport": "Futbol (Süper Lig)",
+    "date": "2025-09-02",
+    "time": "20:00",
+    "venue": "Vodafone Park",
+    "broadcast": "TRT Spor",
+    "scoreHome": 2,
+    "scoreAway": 2
+  },
+  {
+    "teamHome": "Adana Demirspor",
+    "teamAway": "Konyaspor",
+    "sport": "Futbol (Süper Lig)",
+    "date": "2025-09-01",
     "time": "19:00",
-    "venue": "RAMS Park",
-    "broadcast": "beIN Sports 1"
-  },
-  {
-    "teamHome": "Türkiye",
-    "teamAway": "Sırbistan",
-    "sport": "Futbol (Milli Takım – UEFA Uluslar Ligi)",
-    "date": "2025-10-10",
-    "time": "21:45",
-    "venue": "Şükrü Saracoğlu Stadyumu",
-    "broadcast": "TRT Spor"
-  },
-  {
-    "teamHome": "Türkiye",
-    "teamAway": "İtalya",
-    "sport": "Futbol (Milli Takım – Hazırlık Maçı)",
-    "date": "2025-11-15",
-    "time": "20:45",
-    "venue": "Atatürk Olimpiyat Stadyumu",
-    "broadcast": "TRT 1"
+    "venue": "Yeni Adana Stadyumu",
+    "broadcast": "beIN Sports Max 1",
+    "scoreHome": 3,
+    "scoreAway": 1
   }
 ]
